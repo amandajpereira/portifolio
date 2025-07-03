@@ -1,0 +1,60 @@
+@import 'src/styles';
+
+.contato {
+  background: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    color: $roxo-principal;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: $roxo-principal;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($roxo-principal, 10%);
+      }
+    }
+  }
+  .aviso {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  a {
+    color: $roxo-principal;
+    text-decoration: underline;
+  }
+}
+
+}

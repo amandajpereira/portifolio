@@ -1,0 +1,11 @@
+@import 'src/styles';
+
+.footer {
+  background-color: $roxo-principal;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-radius: 0 0 8px 8px;
+}
