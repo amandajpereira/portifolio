@@ -1,0 +1,13 @@
+@import '/src/styles.scss'; // importa variáveis
+
+.sobre {
+  background: white;
+  border-radius: 8px;
+  h2 {
+    color: $roxo-principal;
+    margin-bottom: 1rem;
+  }
+  p {
+    line-height: 1.6;
+  }
+}

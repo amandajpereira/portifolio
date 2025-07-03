@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+// Variáveis globais
+$roxo-principal: #6200ea;
+$fonte-padrao: 'Segoe UI', sans-serif;
+$bg: #f9f9f9;
+$text: #333;
+
+body {
+  font-family: $fonte-padrao;
+  margin: 0;
+  background: $bg;
+  color: $text;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
