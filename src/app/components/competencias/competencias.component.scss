@@ -1,15 +1,59 @@
-@import '/src/styles.scss'; // importa variáveis
+@import '/src/styles.scss';
+
 .competencias {
   background: white;
   border-radius: 8px;
+
   h2 {
     color: $roxo-principal;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
-  ul {
-    padding-left: 1.5rem;
-    li {
-      margin-bottom: 0.5rem;
+
+  .competencias-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+
+  .coluna {
+    flex: 1 1 45%;
+    min-width: 280px;
+    padding: 0 1rem;
+
+    h3 {
+      color: $roxo-principal;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+      }
     }
   }
+
+  // Linha vertical separando as colunas
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #ddd;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .competencias-wrapper::before {
+    display: none;
+  }
+}
+
 }

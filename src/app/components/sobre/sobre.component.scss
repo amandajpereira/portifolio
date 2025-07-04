@@ -3,6 +3,7 @@
 .sobre {
   background: white;
   border-radius: 8px;
+  text-align: center;
   h2 {
     color: $roxo-principal;
     margin-bottom: 1rem;
@@ -11,3 +12,27 @@
     line-height: 1.6;
   }
 }
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.foto-perfil {
+  margin-top: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.texto-sobre {
+  flex: 1;
+}
+

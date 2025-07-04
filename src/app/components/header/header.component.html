@@ -1,0 +1,24 @@
+<header class="header"> 
+  <nav class="nav container">
+    <a href="#sobre" class="logo">Amanda Pereira</a>
+
+    <div class="header-actions">
+      <button class="menu-toggle" (click)="menuAberto = !menuAberto">
+        ☰
+      </button>
+    </div>
+
+    <ul class="nav-links" [class.aberto]="menuAberto">
+      <li><a href="#sobre" (click)="scrollSmooth($event, 'sobre')">Sobre</a></li>
+      <li><a href="#competencias" (click)="scrollSmooth($event, 'competencias')">Competências</a></li>
+      <li><a href="#projetos" (click)="scrollSmooth($event, 'projetos')">Projetos</a></li>
+      <li><a href="#contato" (click)="scrollSmooth($event, 'contato')">Contato</a></li>
+      <li><a href="#fale-comigo" (click)="scrollSmooth($event, 'fale-comigo')">Fale Comigo</a></li>
+      <li><a href="#estudos" (click)="scrollSmooth($event, 'estudos')">Estudos</a></li>
+
+    </ul>
+          <button class="toggle-theme" (click)="alternarTema()">
+        🌓
+      </button>
+  </nav>
+</header>

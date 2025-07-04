@@ -1,0 +1,36 @@
+@import '/src/styles.scss'; // importa variáveis e estilos globais
+
+.estudos {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+
+  h2 {
+    color: $roxo-principal;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: transparent; // remove caixinha cinza
+      padding: 0.5rem 0;
+      color: $texto-cor;
+      font-weight: 500;
+      border-bottom: 1px solid #eee; // linha discreta de separação
+    }
+
+    li:last-child {
+      border-bottom: none; // remove linha do último item
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul li {
+      font-size: 0.95rem;
+    }
+  }
+}

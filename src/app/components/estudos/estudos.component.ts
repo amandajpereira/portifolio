@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./estudos.component.scss']
 })
 export class EstudosComponent {
-
+  isVisible = true;
 }

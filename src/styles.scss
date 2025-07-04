@@ -1,5 +1,6 @@
 // Variáveis globais
-$roxo-principal: #6200ea;
+$roxo-principal: #6c63ff;
+$texto-cor: #333;
 $fonte-padrao: 'Segoe UI', sans-serif;
 $bg: #f9f9f9;
 $text: #333;
@@ -14,4 +15,67 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 2rem;
+}
+
+section.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.bg-claro {
+  background-color: #f8f9fb;
+}
+
+section.bg-escuro {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #f3f4f6;
+  color: #555;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+
+  p {
+    margin: 0;
+  }
+
+
+
+
+}
+
+  /* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark-mode section.bg-claro {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode section.bg-escuro {
+  background-color: #222;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  color: #ccc;
 }
